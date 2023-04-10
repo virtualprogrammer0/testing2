@@ -34,6 +34,7 @@
     <p>CO<sub>2</sub></p>
     <br>
     <p>x<sup>2</sup>+2x-5</p>
+    hr
     <pre>1996 F1 world champion Damon Hill appreciated the intellect that Fernando Alonso often reflects on and off-track, with the latest being in Melbourne after his incident with Carlos Sainz.
 
         The former F1 driver, while talking about Alonso's reaction during the incident, jokingly said that the Spaniard should be a lawyer:
@@ -52,6 +53,48 @@
     <br>
     <hr>
     <p>C + O<sub>2</sub> &rarr; CO<sub>2</sub></p>
+    <hr>
+    <div>
+        <h1>Leave a review (form)</h1>
+        <form action="form.pfp">
+            <label for="reviewerid">
+                <input type="text" placeholder="Enter Your Name" name="reviewer" id="reviewerid">
+            </label>
+            <br>
+            <label for="buyid">
+                <input type="radio" value="purchased" name="reviewer" id="buyid">purchased
+            </label>
+            <label for="non-buyerid">
+                <input type="radio" value="not-purchased" name="reviewer" id="non-buyerid">Not purchased
+            </label>
+            <label for="yesid">
+                <input type="checkbox" name="yes" id="yesid">yes
+            </label>
+            <label for="buttonid">
+                <input type="button" name="button" id="buttonid" value="No">
+            </label>
+            <br>
+            <label for="datetime">Enter a date and time of purchase:
+                <input id="datetime" type="datetime-local" name="purchasedatetime" />
+            </label>
+            <br>
+            <label for="email">
+                Enter Email:
+                <input type="email" name="emailadress" id="email" pattern=".+@gmail\.com" size="30">
+            </label>
+            <br>
+            <label for="imageid">
+                Choose a Photo:
+                <input type="file" name="image" id="imageid"
+                accept="image/png, image/jpeg">
+            </label>
+            <br>
+            <label for="volume">
+                Volume
+                <input type="range" name="volumerange" id="volume" min="0" max="120" value="60" step="10">
+            </label>
+        </form>
+    </div>
 </body>
 
 </html>
