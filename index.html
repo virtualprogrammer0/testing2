@@ -64,12 +64,15 @@
             <label for="buyid">
                 <input type="radio" value="purchased" name="reviewer" id="buyid">purchased
             </label>
+            <br>
             <label for="non-buyerid">
                 <input type="radio" value="not-purchased" name="reviewer" id="non-buyerid">Not purchased
             </label>
+            <br>
             <label for="yesid">
                 <input type="checkbox" name="yes" id="yesid">yes
             </label>
+            <br>
             <label for="buttonid">
                 <input type="button" name="button" id="buttonid" value="No">
             </label>
@@ -80,20 +83,38 @@
             <br>
             <label for="email">
                 Enter Email:
-                <input type="email" name="emailadress" id="email" pattern=".+@gmail\.com" size="30">
+                <input type="email" name="emailadress" id="email" pattern=".+@gmail\.com" size="30" placeholder="         @gmail.com">
             </label>
             <br>
             <label for="imageid">
                 Choose a Photo:
-                <input type="file" name="image" id="imageid"
-                accept="image/png, image/jpeg">
+                <input type="file" name="image" id="imageid" multiple>
             </label>
             <br>
             <label for="volume">
                 Volume
                 <input type="range" name="volumerange" id="volume" min="0" max="120" value="60" step="10">
             </label>
+            <br>
+            <textarea name="review" id="reviewid" cols="30" rows="10" placeholder="Write a review"></textarea>
+            <br>
+            <select name="problem" id="problemid">
+                <option value="default">Select Option</option>
+                <option value="orderid">No problem</option>
+                <option value="failedid">Order Failed</option>
+                <option value="Returnid">Order Returned</option>
+                <option value="defectiveid">Order Damaged</option>
+            </select>
         </form>
+    </div>
+    <br>
+    <!-- Video -->
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g7oNuP83VXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div>
+        <iframe src="https://bing.com" frameborder="0"  width="892px"></iframe>
     </div>
 </body>
 
